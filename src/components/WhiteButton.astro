@@ -1,0 +1,28 @@
+---
+const {text} = Astro.props
+---
+
+
+<button>
+    {text}
+</button>
+
+<style>
+    button {
+        width: 166px;
+        height: 50px;
+        background-color: white;
+        border-radius: 200px;
+        color: var(--pink);
+    }
+
+    /* Media Query for Tablet */
+    @media only screen and (max-width: 768px) {
+        
+    }
+
+    /* Media Query for Mobile */
+    @media only screen and (max-width: 480px) {
+       
+    }
+</style>

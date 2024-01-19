@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,44 +8,123 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  :root {
+    --font-family: "Poppins", sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --font-weight-extra-bold: 700;
+
+    --greyOne: #252525;
+    --greyTwo: #424242;
+    --greyThree: #858585;
+    --greyFour: #d2d2d2;
+    --greyFive: #ededed;
+    --pink: #e43071;
+    --subPink: #ffc1d8;
+    --green: #26d68a;
+    --subGreen: #9be8c7;
+  }
+
+  html {
+    font-family: var(--font-family);
+  }
+
+  /* Define styles using the Poppins font and variables */
+  body {
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-weight: var(--font-weight-extra-bold);
+  }
+  h2 {
+    font-size: 60px;
+    font-weight: var(--font-weight-extra-bold);
+  }
+  h3 {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+  }
+  h4 {
+    font-size: 40px;
+    font-weight: var(--font-weight-extra-bold);
+  }
+  h5 {
+    font-size: 38pxpx;
+    font-weight: var(--font-weight-bold);
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: var(--font-weight-regular);
+  }
+  .body {
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+  }
+  .hyperlink {
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .greyOne {
+    color: #252525;
+  }
+  .greyTwo {
+    color: #424242;
+  }
+  .greyThree {
+    color: #858585;
+  }
+  .greyFour {
+    color: #d2d2d2;
+  }
+  .greyFive {
+    color: #ededed;
+  }
+  .pink {
+    color: #e43071;
+  }
+  .subpink {
+    color: #ffc1d8;
+  }
+  .green {
+    color: #26d68a;
+  }
+  .subgreen {
+    color: #9be8c7;
+  }
+
+  /* Media Query for Tablet */
+  @media only screen and (max-width: 1024px) {
+	h1 {font-size: 46px;}
+  }
+
+  /* Media Query for Mobile */
+  @media only screen and (max-width: 480px) {
+	h1 {font-size: 32px;}
+
+  }
 </style>

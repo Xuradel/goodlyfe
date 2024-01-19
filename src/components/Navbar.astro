@@ -1,0 +1,51 @@
+---
+import WhiteButton from "./WhiteButton.astro";
+---
+
+<nav class="h-24 w-full">
+  <h5 class="text-white font-extrabold">
+    Good<span class="text-white/60">lyfe</span>
+  </h5>
+  <div class="flex gap-x-12">
+    <a class="body link" href="/classes">Classes</a>
+    <a class="body link" href="/timetable">Timetable</a>
+    <a class="body link" href="/clubs">Clubs</a>
+    <a class="body link" href="/nutrition">Nutrition</a>
+    <a class="body link" href="/trial">Free Trial</a>
+    <a class="body link flex items-center gap-x-1" href="/search"
+      >Search <span
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-search"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+          <path d="M21 21l-6 -6"></path>
+        </svg></span
+      ></a
+    >
+  </div>
+  <WhiteButton text="Login"/>
+</nav>
+
+<style>
+  nav {
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem 0 3rem;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+  }
+</style>
