@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Header from '../components/Header.astro';
+import Feature from '../components/Feature.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<Navbar />
 		<Header />
+		<Feature image1='../../public/feature1.png' image2="../../public/feature2.png"/>
 	</main>
 </Layout>
 

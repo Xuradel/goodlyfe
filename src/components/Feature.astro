@@ -1,0 +1,15 @@
+---
+const {flip} = Astro.props;
+const {image1} = Astro.props;
+const {image2} = Astro.props;
+---
+
+<section>
+    <div class="relative">
+        <img src={image1} alt="man lifting weights" class="absolute"/>
+        <img src={image2} alt="woman doing situps" class="absolute top-40 left-44"/>
+    </div>
+    <div>
+
+    </div>
+</section>
