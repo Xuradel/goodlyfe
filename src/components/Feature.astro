@@ -2,14 +2,34 @@
 const {flip} = Astro.props;
 const {image1} = Astro.props;
 const {image2} = Astro.props;
+const {body} = Astro.props;
+const {head} = Astro.props;
+const {button} = Astro.props;
+import OutlineButton from './OutlineButton.astro'
 ---
+<!-- class="absolute" -->
+<!-- class="absolute top-40 left-44" -->
 
-<section>
+<section class="flex items-center justify-center gap-40 relative py-40">
     <div class="relative">
-        <img src={image1} alt="man lifting weights" class="absolute"/>
-        <img src={image2} alt="woman doing situps" class="absolute top-40 left-44"/>
+        <img src={image1} alt="man lifting weights" />
+        <img src={image2} alt="woman doing situps" class="absolute top-40 left-44" />
     </div>
-    <div>
-        <h2>text section</h2>
+    <div class="flex flex-col gap-y-4">
+        <h4>{head}</h4>
+        <p class="body">{body}</p>
+        <OutlineButton text={button}/>
     </div>
 </section>
+
+<style>
+    h4 {
+        color: var(--pink);
+    }
+
+    p {
+        color: var(--greyOne);
+        width: 540px;
+        line-height: 37px;
+    }
+</style>

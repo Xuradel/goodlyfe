@@ -3,7 +3,7 @@ const {text} = Astro.props
 ---
 
 
-<button>
+<button class="hyperlink">
     {text}
 </button>
 
@@ -11,13 +11,13 @@ const {text} = Astro.props
     button {
         width: 237px;
         height: 68px;
-        background-color: var(--pink);
         border-radius: 200px;
-        color: white;
+        color: #ef3f7f;
+        border: solid 2px #ef3f7f;
     }
 
     button:hover {
-        background-color: #ef3f7f;
+        background-color: #fef7f9;
     }
 
     /* Media Query for Tablet */
