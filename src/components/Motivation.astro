@@ -1,0 +1,30 @@
+---
+import PinkButton from "./PinkButton.astro";
+---
+
+<section>
+  <h2>Become more than you are.</h2>
+  <p>
+    Staying active is great fun and keeps you healthy.<br />Check out how you
+    can join in.
+  </p>
+  <PinkButton text="Let's do it!" />
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../public/motivation.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  p {text-align: center;}
+
+  h2{padding-left: 2rem;}
+</style>
