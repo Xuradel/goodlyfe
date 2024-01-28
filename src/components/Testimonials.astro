@@ -1,6 +1,37 @@
 ---
+import TestimonialCard from "./TestimonialCard.astro";
+
+
 ---
 
 <section>
-    <h2>Our testimonials</h2>
+  <div>
+    <h3 class="text-black">Real Stories From <br /> Real Customers</h3>
+    <p class="subtitle text-black">Be inspired with these experiences.</p>
+  </div>
+  <div>
+    <TestimonialCard 
+    title="3Kg lost!"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
+    picture='../../public/Portraitofperson1.png'
+    name="James John"
+    profesion="Engineer"
+    size="medium"
+    />
+  </div>
 </section>
+
+<style>
+  section {
+    background: rgb(244, 227, 233);
+    background: linear-gradient(
+      0deg,
+      rgba(244, 227, 233, 1) 0%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>

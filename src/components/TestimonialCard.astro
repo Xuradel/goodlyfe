@@ -1,0 +1,48 @@
+---
+const { title } = Astro.props;
+const { body } = Astro.props;
+const { picture } = Astro.props;
+const { name } = Astro.props;
+const { profesion } = Astro.props;
+const { size } = Astro.props;
+---
+
+<article class="flex flex-col gap-y-4">
+  <h4>{title}</h4>
+  <p>
+    <span>“</span>
+    {body}
+  </p>
+  <div class="flex items-center gap-x-4">
+    <img src={picture}/>
+    <div>
+        <p class="hyperlink">{name}</p>
+        <p class="subtitle profesion">{profesion}</p>
+    </div>
+  </div>
+</article>
+
+<style>
+  article {
+    width: 349px;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: white;
+  }
+  h4 {
+    color: var(--pink);
+  }
+  span {
+    color: var(--subPink);
+    font-size: 48px;
+  }
+  p {
+    color: black;
+  }
+  .profesion{
+    font-size: 14px;
+  }
+</style>
