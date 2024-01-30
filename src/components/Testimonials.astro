@@ -1,39 +1,39 @@
 ---
 import TestimonialCard from "./TestimonialCard.astro";
-
-
 ---
 
 <section>
-  <div>
+  <div class="relative right-72 top-36">
     <h3 class="text-black">Real Stories From <br /> Real Customers</h3>
     <p class="subtitle text-black">Be inspired with these experiences.</p>
   </div>
-  <div>
-    <TestimonialCard 
-    title="3Kg lost!"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
-    picture='../../public/Portraitofperson1.png'
-    name="James John"
-    profesion="Engineer"
-    size="medium"
+  <div class="cards">
+    <TestimonialCard
+      title="3Kg lost!"
+      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
+      picture="../../public/Portraitofperson1.png"
+      name="James John"
+      profesion="Engineer"
+      size="medium"
     />
-    <TestimonialCard 
-    title="17Kg lost!"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
-    picture='../../public/Portraitofperson2.png'
-    name="Emily Smith"
-    profesion="Architect"
-    size="large"
-    />
-    <TestimonialCard 
-    title="7Kg lost!"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
-    picture='../../public/Portraitofperson3.png'
-    name="Coraline jones"
-    profesion="Engineer"
-    size="small"
-    />
+    <div class="cards2">
+      <TestimonialCard
+        title="17Kg lost!"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in mo."
+        picture="../../public/Portraitofperson2.png"
+        name="Mary Patricia"
+        profesion="Architect"
+        size="large"
+      />
+      <TestimonialCard
+        title="43Kg lost!"
+        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        picture="../../public/Portraitofperson3.png"
+        name="Robert Micheal"
+        profesion="Engineer"
+        size="small"
+      />
+    </div>
   </div>
 </section>
 
@@ -45,9 +45,21 @@ import TestimonialCard from "./TestimonialCard.astro";
       rgba(244, 227, 233, 1) 0%,
       rgba(255, 255, 255, 1) 50%
     );
-    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cards2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 </style>
