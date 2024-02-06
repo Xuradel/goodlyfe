@@ -2,7 +2,7 @@
 const {flip, image1, image2, body, head, button} = Astro.props;
 import OutlineButton from './OutlineButton.astro';
 ---
-<section class={`flex ${flip ? 'flex-row-reverse' : ''} items-center justify-center gap-40 relative pt-40 pb-60`}>
+<section class={`flex ${flip ? 'flex-row-reverse' : ''} items-center justify-center gap-40 relative mt-40`}>
   <div class="relative">
     <img src={image1} alt="man lifting weights" />
     <img src={image2} alt="woman doing situps" class="absolute top-40 left-44" />

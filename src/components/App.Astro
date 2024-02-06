@@ -3,5 +3,51 @@
 ---
 
 <section>
-  <h2>App section</h2>
+  <div class="flex flex-col gap-y-4 text-section">
+    <h4>Don't forget our app</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget
+      lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec
+      felis. Sed id egestasegestas risus, ut imperdiet augue.
+    </p>
+    <p class="text-white/60">Download now</p>
+    <img class="app-icons" src="../../public/appicons.png" role="button" />
+  </div>
+  <div>
+    <img class="phones" src="../../public/phones.png" />
+  </div>
 </section>
+
+<style>
+  section {
+    height: 572px;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  p {
+    max-width: 489px;
+    line-height: 37px;
+  }
+
+  .phones {
+    width: 597px;
+  }
+  .app-icons {
+    width: 282px;
+  }
+
+  @media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .text-section{
+        padding: 0 2rem 0 2rem;
+    }
+  }
+</style>
