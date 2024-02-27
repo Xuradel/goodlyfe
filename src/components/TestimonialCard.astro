@@ -2,17 +2,21 @@
 const { title, body, picture, name, profesion, size } = Astro.props;
 
 const getWidth = () => {
+  // Check if the screen width is below 640 pixels (commonly considered mobile width)
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 640;
+
   switch (size) {
     case "large":
-      return "449px";
+      return isMobile ? "349px" : "449px";
     case "medium":
-      return "349px";
+      return isMobile ? "249px" : "349px";
     case "small":
-      return "351px";
+      return isMobile ? "251px" : "351px";
     default:
-      return "349px"; // default to medium if size is not provided or invalid
+      return isMobile ? "249px" : "349px"; // default to medium if size is not provided or invalid
   }
 };
+
 //add responsiveness to the card width
 ---
 
