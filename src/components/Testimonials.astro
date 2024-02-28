@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard.astro";
 ---
 
 <section>
-  <div class="relative right-72 top-36">
+  <div class="testimonial-title relative right-72 top-36">
     <h3 class="text-black">Real Stories From <br /> Real Customers</h3>
     <p class="subtitle text-black">Be inspired with these experiences.</p>
   </div>
@@ -70,7 +70,13 @@ import TestimonialCard from "./TestimonialCard.astro";
   }
 
   /* Media Query for Mobile */
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 720px) {
+    
+    .testimonial-title{
+        top: 0;
+        left: 0;
+    }
+
     .cards {
     display: flex;
     align-items: center;
