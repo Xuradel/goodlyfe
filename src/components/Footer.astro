@@ -200,6 +200,18 @@
       </div>
     </div>
   </div>
+  <div class="flex flex-col lg:flex-row justify-around w-full footer-links px-8  lg:px-44">
+    <p>© 2020 GoodLyfe. All rights reserved</p>
+    <div class="flex gap-x-4">
+        <a href="/terms">Terms & Conditions</a>
+        <p>|</p>
+        <a href="/privacy">Privacy Policy</a>
+        <p>|</p>
+        <a href="/sitemap">Sitemap</a>
+        <p>|</p>
+        <a href="/disclaimer">Disclaimer</a>
+    </div>
+  </div>
 </footer>
 
 <style>
@@ -207,6 +219,10 @@
     background-color: black;
     padding-top: 6rem;
     padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4rem;
   }
 
   .logo {
@@ -238,6 +254,10 @@
     gap: 5px;
   }
 
+  .footer-links{
+    font-weight: var(--font-weight-regular);
+    font-size: 14px;
+  }
   @media only screen and (max-width: 790px) {
     .links-container{
         padding-left: 3.8rem;
