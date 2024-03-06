@@ -10,12 +10,13 @@ import TestimonialCard from "./TestimonialCard.astro";
   <div class="cards">
     <TestimonialCard
       title="3Kg lost!"
-      body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
+      body="I've lost 3 kilograms using this amazing gym app! It has transformed my fitness journey completely. The personalized plans and seamless tracking made all the difference. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risu."
       picture="../../public/Portraitofperson3.png"
       name="James John"
-      profesion="Engineer"
+      profession="Fitness Enthusiast"
       size="medium"
     />
+
     <div class="cards2">
       <TestimonialCard
         title="17Kg lost!"
@@ -66,28 +67,26 @@ import TestimonialCard from "./TestimonialCard.astro";
 
   /* Media Query for Tablet */
   @media only screen and (max-width: 1024px) {
-
   }
 
   /* Media Query for Mobile */
   @media only screen and (max-width: 720px) {
-    
-    .testimonial-title{
-        top: 0;
-        left: 0;
+    .testimonial-title {
+      top: 0;
+      left: 0;
     }
 
     .cards {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: column;
-  }
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-direction: column;
+    }
 
-  .cards2 {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+    .cards2 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 </style>
